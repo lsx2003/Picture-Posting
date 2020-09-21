@@ -1,0 +1,401 @@
+header{
+display: grid;
+grid-template-columns: 24px 400px 1fr 84px 10px;
+grid-template-areas: 'left-space logo nav account right-space';
+background-color: #00d2d3;
+width:100%;
+height: 64px;
+line-height: 64px;    
+z-index: 1;
+box-shadow: 0 0 5px;
+position: fixed;
+}
+
+.logo{
+ grid-area: logo;
+ color: white;
+ font-size: 32px;
+ font-weight: 700;
+ text-decoration: none;
+ line-height: 60px;
+ padding-top: 5px;
+ display: inline-block;
+}
+
+ol, ul{
+  list-style: none;
+}
+
+header nav{
+  grid-area: nav;
+  display: inline-block;
+}
+
+nav ul li.on {
+  padding-bottom: 15px;
+  border-bottom: 3px solid white;
+}
+
+nav ul li:hover{
+  opacity: .5;
+}
+
+header nav ul li{
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+  padding-right: 15px;
+  padding-left: 10px;
+  display: inline;
+  color: #fff;
+}
+
+.account{
+  grid-area: account;
+  font-size: 20px;
+  font-weight: 700;  
+  text-align: right;
+  color: white;
+  text-decoration: none;
+  position: relative, fixed;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.account:hover{
+ opacity: .5;}
+
+
+main{
+  position: relative;
+  display: block;
+  padding-top: 64px;
+  padding-left: 240px; 
+}
+
+main .aside{
+  background-color: #f1f2f6;
+  top: 64px;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  border-right: 1px solid darkgray;
+  position:fixed;
+}
+
+main  { 
+  display: block;
+}
+
+.upload .photos{
+  display: none;
+}
+
+.myInfo .photos{
+  display: none;
+}
+
+
+main .content p{
+  font-size: 25px;
+}
+
+main.gallery .option1,
+main.upload .option2,
+main.myInfo .option3 {
+  display: block;
+}
+
+main .option1, .option2, .option3{  
+  padding: 20px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+
+.gallery .option2, .option3{
+  display: none;
+}
+.upload .option1, .option3{
+  display: none;
+}
+.myInfo .option1, .option2{
+  display: none;
+}
+
+.upload ul{
+  display: none;
+}
+.upload .regiupload{
+  display: block;
+  line-height: 40px;
+}
+
+.upload .intro, .info{
+  display: none;
+}
+
+.myInfo ul{
+  display: none;
+}
+.myInfo .info{
+  display: block;
+}
+
+.myInfo .intro, .regiupload, .write{
+  display: none;
+  }
+.regiupload{
+  line-height: 30px;
+}
+.instruction {
+  font-size: 30px;
+}
+
+.description{
+ width: 400px;
+ height: 20px;
+ margin-top: 30px;
+}
+
+.descLength{
+  font-size: 15px;
+}
+
+.selectFile{
+  width: 400px;
+  height: 35px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.button {
+display: inline;
+padding: 10px 20px;
+color: white;
+background-color: #00d2d3;
+font-size: 1.1rem;
+cursor: pointer;
+}
+
+.recent:hover
+{
+  opacity: 0.5;
+}
+
+.recent:hover
+{
+  opacity: 0.5;
+}
+
+.like:hover{
+  opacity: 0.5;
+}
+
+.all:hover{
+  opacity: 0.5;
+}
+
+.mine:hover{
+  opacity: 0.5;
+}
+
+.follow:hover{
+  opacity: 0.5;
+}
+.recent, .total{ 
+  color:#576574;
+  font-weight: bold;
+  background-color: #c8d6e5;
+  border-top: 1px solid #dcdde1;
+  border-bottom: 1px solid #dcdde1;
+}
+
+main .aside ul li {
+  padding: 8px 34px;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 700px;
+}
+
+.content{
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.content .section{
+    padding: 30px 30px 70px 70px;
+    background-color: white;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.content .section h1{
+   font-weight: 600;
+   font-size: 30px; 
+}
+
+.content .section p{
+  border-bottom: 1px solid black;
+  padding-bottom: 50px;
+
+}
+
+#myinfo table{
+  color: black;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+#myinfo .edit #sp-intro {
+  display: none;
+}
+
+#myinfo .edit .revise {
+  display: none;
+}
+
+#myinfo .non-edit .cancel {
+  display: none;
+}
+
+#myinfo .non-edit .confirm {
+  display: none;
+}
+
+#myinfo .non-edit #ip-intro {
+  display: none;
+}
+
+#sp-intro{
+  width: 400px;
+  display: inline-block;
+}
+
+#ip-intro{
+  width: 400px;
+}
+
+#myinfo table tr td {
+  width: 100px;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+#myinfo table tr td label {
+  padding-left: 5px;
+  padding-right: 20px;
+} 
+
+.revise, .confirm, .cancel{
+  display: inline;
+  padding: 10px 20px;
+  color: white;
+  background-color: #00d2d3;
+  font-size: 1.1rem;
+  cursor: pointer;
+  
+}
+
+.photos{
+  display: block;
+}
+
+.hidden{
+  display: none;
+}
+
+article{
+  display: inline-block;
+  margin: 8px;
+  padding: 30px 30px;
+  margin: 10px 10px;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  line-height: 5rem;
+}
+
+article.photo{
+  width: 440px;
+  height: 320px;
+  border-radius: 4px;
+  background-size: cover;
+}
+
+article .info{
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: 32px auto;
+  grid-template-areas:
+      'like author'
+      'like desc';
+  margin-top: 16px;
+  font-size: 1.2rem;
+}
+
+article .info .like {
+  grid-area: like;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-image: url("heart_off.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+article .info .like:hover {
+  opacity: 0.5;
+}
+
+.info .like.on {
+  background-image: url("heart_on.png");
+}
+
+article .info .author {
+  grid-area: author;
+  font-weight:700;
+  line-height: 32px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+article .info .author span {
+  font-weight:600;
+  font-size: 15px;
+  margin-left: 5px;
+  color: darkcyan;
+}
+
+article .info .desc {
+  grid-area: desc;  
+  color: gray;
+  line-height: 32px;
+  padding-left: 5px;
+}
+
+
+section.gallery article .photo{
+  width: 430px;
+  height: 320px;
+  border-radius: 4px;
+  padding:0;
+  background-size: cover;
+  
+}
+
+section.gallery article .photo:hover{
+  opacity: 0.5;
+}  
+
+#photo-1{ background-image:url(photo_1.jpg) }
+#photo-2{ background-image:url(photo_2.jpg) }
+#photo-3{ background-image:url(photo_3.jpg) }
+#photo-4{ background-image:url(photo_4.jpg) }
+#photo-5{ background-image:url(photo_5.jpg) }
+
